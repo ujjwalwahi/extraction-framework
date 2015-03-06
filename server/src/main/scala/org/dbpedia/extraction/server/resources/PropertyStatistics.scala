@@ -122,7 +122,7 @@ class PropertyStatistics(@PathParam("lang") langCode: String, @QueryParam("templ
 
                 <tr class={backgroundClass}>
                         <td align="right">
-                        <a name={urlEncode(name)}/>
+                        <a href={"../../fieldoccurrences/"+langCode+"/?template="+wikiEncode(template)+"&field="+urlEncode(name)} name={urlEncode(name)}/>
                             {counter}
                         </td> <td>
                         {name}
